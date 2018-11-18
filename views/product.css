@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 1500px;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.wrapper .wrapper-work {
+  max-width: 1240px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.wrapper .wrapper-work .wrapper-work-product {
+  max-width: 1180px;
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wrapper .wrapper-work .wrapper-work-product .wrapper-work-product-product {
+  background-image: url(../images/catalog/9.jpg);
+  width: 95%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=product.css.map */
