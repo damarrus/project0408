@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Главная</title>
 </head>
