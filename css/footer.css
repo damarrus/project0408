@@ -11,7 +11,7 @@
     }
 
 .footer-blocks{
-    background:rgba(0, 0, 0, 0.664);
+    background:whitesmoke;
     padding: 50px;
     display: flex;
     justify-content: space-between; 
@@ -22,3 +22,22 @@
     box-sizing: border-box;
     padding-right: 70px;  
 }
+
+.contacts img{
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer-block  h1{
+    color:rgba(0, 0, 0, 0.719);
+    font-size: 18px;
+    margin-bottom: 20px;  
+}
+
+.footer-block  p{
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 10px;  
+}
+

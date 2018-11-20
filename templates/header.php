@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Главная</title>
-</head>
+</head>kmkmkm
 <body>
 <body>    
 <div class="wrapper">
