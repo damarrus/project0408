@@ -11,3 +11,51 @@
 
 }
 
+#zagolovok{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgb(48, 48, 48);
+    line-height: 1;
+    text-align: center;
+
+}
+#zagolovok h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-top: 40px;
+    font-style: bold;
+}
+
+#zagolovok h4{
+    
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#cart {
+
+}
+#summ {
+    background-color: lightgray;
+    text-align: right;
+}
+
+svg {
+    fill: none;
+    stroke: orange;
+    stroke-width: 1;
+    
+}
+
+#zigzag{
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale( 1, -1);
+    
+      
+}
+
+  
+  
+
