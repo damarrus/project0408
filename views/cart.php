@@ -16,22 +16,22 @@
 <div class="wrapper">
 
     <div id="zagolovok">      
-    <hr>
-        <h2>Ваша корзина</h2>
-        <h4>Товары резервируются наограниченное время</h4>
+    
+        <h2 id="vasacart">Ваша корзина</h2>
+        <h4 id="podzagolov">Товары резервируются наограниченное время</h4>
     </div>
     <div id="cart">
         <table>
         <tr>
-            <th>Фото</th>
+            <th id="seriy">Фото</th>
             <th>
-                <div id="prod_title">Наименование
+                <div id="prod_title" id="seriy">Наименование
                 </div>
                 </th> 
-            <th>Размер</th>
-            <th>Количество</th>
-            <th>Стомость</th>
-            <th>Удалить</th>  
+            <th id="seriy">Размер</th>
+            <th id="seriy">Количество</th>
+            <th id="seriy">Стомость</th>
+            <th id="seriy">Удалить</th>  
             
         </tr>
         
@@ -43,7 +43,7 @@
             </td>
             <td>
             <div id="prod_title">
-                <h4>Куртка синяя</h4>
+                <h4 id="prod">Куртка синяя</h4>
                 <p>арт: 123412</p>
             </div>
             </td>
@@ -51,8 +51,8 @@
             <td>
                 <div>1 
                     <div>
-                        <i class="far fa-plus-square"></i><br>
-                        <i class="far fa-minus-square"></i>
+                    <i class="fas fa-plus-square"></i><br>
+                    <i class="fas fa-minus-square"></i></i>
                     </div>
                 </div>
             </td>
@@ -69,7 +69,7 @@
             </td>
             <td>
                 <div id="prod_title">
-                    <h4>Кеды серые</h4>
+                    <h4 id="prod">Кеды серые</h4>
                     <p>арт: 123412</p>
                 </div>
             </td>
@@ -77,8 +77,8 @@
             <td>
                 <div>1 
                     <div>
-                        <i class="far fa-plus-square"></i><br>
-                        <i class="far fa-minus-square"></i>
+                        <i class="fas fa-plus-square"></i><br>
+                        <i class="fas fa-minus-square"></i>
                     </div>
                 </div>
             </td>
@@ -94,7 +94,7 @@
             </td>
             <td>
                 <div id="prod_title">
-                    <h4>Джинсы голубые</h4>
+                    <h4 id="prod">Джинсы голубые</h4>
                     <p>арт: 123412</p>
                 </div>
             </td>
@@ -102,8 +102,8 @@
             <td>
                 <div>1 
                     <div>
-                        <i class="far fa-plus-square"></i><br>
-                        <i class="far fa-minus-square"></i>
+                        <i class="fas fa-plus-square"></i><br>
+                        <i class="fas fa-minus-square"></i>
                     </div>
                 </div>
             </td>
@@ -115,7 +115,7 @@
         
     </div>
     <div id="summ">
-        <span><h3>Итого: 12500 руб.</h3></span>
+        <h3>Итого: <span id="itogo">12500 руб.</span></h3>
     </div>
     <div id="zigzag">
         <svg viewBox="0 0 311.1 14.4">
@@ -125,31 +125,36 @@
 
     <div id="forma">
         <form action="dostavka" method="post">
-            <h2>Адрес доставки</h2>
-            <h5>Все поля обязательны для заполнения</h5>
-            <h4>Выбирете вариант доставки</h4>
+            <h2 id="vasacart">Адрес доставки</h2>
+            <h5 id="podzagolov">Все поля обязательны для заполнения</h5>
+            <h4 id="seriy">Выбирете вариант доставки</h4>
             <select name="delivery" id="">
                 <option value="">Курьерская служба - 500 руб</option>
                 <option value="">Сомовывоз</option>
                 <option value="">Почта России</option>
             </select>
             <br>
-            Имя<br>
+            <h4 id="seriy">Имя</h4>
+            <br>
             <input type="text" name="" id="">
-            Фамилия
+            <h4 id="seriy">Фамилия</h4>
             <input type="text" name="" id="">
             <br>
-            Адресс<br>
+            <h4 id="seriy">Адресс</h4>
+            <br>
             <input type="text" name="" id="adress">
             <br>
-            Город<br>
+            <h4 id="seriy">Город</h4>
+            <br>
             <input type="text" name="" id="">
-            Индекс
+            
+            <h4 id="seriy">Индекс</h4>
             <input type="text" name="" id="">
             <br>
-            Телефон<br>
+            <h4 id="seriy">Телефон</h4>
+            <br>
             <input type="tel" name="" id="">
-            Е-MAIL
+            <h4 id="seriy">Е-MAIL</h4>
             <input type="email" name="" id="">
     </div>
             <div id="zigzag">
@@ -159,16 +164,18 @@
             </div>
         
         <div id="forma">
-            <h2>Варианты оплаты</h2>
-            <h5>Все поля обязательны для заполнения</h5>
+            <h2 id="vasacart">Варианты оплаты</h2>
+            <h5 id="podzagolov">Все поля обязательны для заполнения</h5>
             <div>
                 <h3>Стоимость: 12000 руб.</h3>
                 <h3>Доставка: 500 руб.</h3>
-                <h3>Итого: 12500 руб.</h3>
+                <h3 id="itogo">Итого:12500 руб.</h3>
             </div>
-            <h2>выберите способ оплаты</h2>
+            <h2 id="seriy">выберите способ оплаты</h2>
             <select name="pay" id="">
-                <option value="">Банковская карта</option>
+                <option value="">  Банковская карта
+                  
+                </option>
                 <option value="">Счет</option>
                 <option value="">Наличные при получении</option>
             </select>
