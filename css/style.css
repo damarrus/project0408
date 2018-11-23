@@ -72,6 +72,16 @@ th {
     text-transform: uppercase;
 }
 
+#kolvo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#count {
+    margin-right: 10px;
+}
+
 #cart img {
     width: 98px;
     height: 98px;
@@ -89,17 +99,27 @@ svg {
     fill: none;
     stroke: orange;
     stroke-width: 1;
-    width: 30%;
-    
+    width: 250px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;  
+    padding-left: 50px;
     
 }
 
+
+
 #zigzag{
-    margin-left: auto;
-    margin-right: auto;
+    
     transform: scale( 1, -1);
     background-color: rgb(255, 255, 255);
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin: 20px;
     
       
 }
@@ -119,7 +139,7 @@ svg {
     /* background-color: rgb(255, 255, 255); */
     margin-bottom: 30px;
    
-    width: 278px;
+    /* width: 278px; */
     height: 40px;
 
 }
@@ -134,8 +154,55 @@ svg {
     height: 40px;
 
 }
+
+#zakaz {
+    width: 578px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+   
+}
+
+#zakaz-lg {
+    width: 578px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+}
+
+#zakaz-sml-r {
+    width: 278px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: auto;
+    margin-top: 40px;
+}
+#zakaz-sml-l {
+    width: 278px;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+
 #adress {
     width: 578px;
+}
+
+#pole {
+    width: 278px;
 }
 
 hr { 
@@ -147,6 +214,7 @@ hr {
     border-style: inset;
     border-width: 1px;
 } 
+
 
 #btn {
     border-width: 1px;
@@ -162,7 +230,7 @@ hr {
 
 
 #vasacart {
-    font-size: 36px;
+    font-size: 26px;
     font-family: "Roboto";
     color: rgb(48, 48, 48);
     text-transform: uppercase;
@@ -175,13 +243,9 @@ hr {
     text-transform: uppercase;
   
   }
-  .выберите_вариант_доставки {
-    font-size: 12px;
-    font-family: "Myriad Pro";
-    color: rgb(96, 96, 96);
-    text-transform: uppercase;
 
-  }
+
+  
 #podzagolov {
     font-size: 18px;
     font-family: "Georgia";
@@ -193,6 +257,8 @@ hr {
     font-size: 18px;
     font-family: "Roboto";
     color: rgb(246, 130, 54);
+    margin-right: 40px;
+    margin-left: 40px;
 
   }
   
@@ -205,6 +271,6 @@ hr {
     text-transform: uppercase;
 
 }     
-      
 
-  
+
+      
