@@ -20,7 +20,7 @@
             <select name="size" id="">
                 <option>Размер</option>
             </select>
-            <select name="price" id="">
+            <select name="cost" id="">
                 <option>Стоимость</option>
                 <option>0-1000</option>
                 <option>1000-3000</option>
@@ -31,8 +31,64 @@
     <div class="products">
         <div class="item">
             <div class="product"></div>
-            <p class=""> </p>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
         </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>   
+        <div class="item">
+            <div class="product"></div>
+            <p class="description">Куртка синяя</p>
+            <p class="price">5400</p>
+        </div>      
     </div>
 
 

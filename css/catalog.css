@@ -54,3 +54,11 @@ padding: 48px;
     border: 1px rgb(204, 204, 204) solid;
     
 }
+
+.description {
+    text-align: center;
+}
+
+.price {
+    text-align: center; 
+}
