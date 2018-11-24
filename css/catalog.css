@@ -4,12 +4,53 @@
     border: 0;
 }
 
+.main_wrapper {
+    margin: 0 auto;
+    max-width: 1550px;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+}
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 .title {
-    width: 150px;
+    width: 300px;
     margin: 0 auto;
+    text-align: center;
+    margin-top: 123px;
+}
+
+.title h1 {
+    margin-bottom: 30px;
+}
+
+
+
+.options {
+    margin: 0 auto;
+    max-width:300px;
+    margin-top: 75px;
+    margin-bottom: 65px;
+}
+
+.products {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+padding: 48px;
+}
+
+.product {
+    width: 220px;
+    height: 256px;
+    border: 1px rgb(204, 204, 204) solid;
+    
 }
