@@ -86,5 +86,4 @@ class User
         $mysqli->query($query);
     }
 }
-User::create('dima', 'dima', '123', '2');
 
