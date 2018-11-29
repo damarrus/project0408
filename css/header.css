@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Arial, Helvetica, sans-serif; 
 
 }
 
@@ -12,7 +11,7 @@
     }
 
 .header {
-    background: color="#ffffff";
+    background: white;
     height: 100px;
     display: flex;
     border-bottom: 2px whitesmoke solid;

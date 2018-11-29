@@ -1,5 +1,5 @@
 * {
-    font-family:'Open Sans','Open Sans Condensed','Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,7 +19,6 @@
     text-align: center;
     padding: 20px;
     margin: 20px;
-    border-top: solid 1px rgb(194, 194, 194);
 
 }
 #zagolovok h2{
