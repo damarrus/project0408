@@ -12,7 +12,7 @@
     <div id="zagolovok">      
     
         <h2 id="vasacart">Ваша корзина</h2>
-        <h4 id="podzagolov">Товары резервируются наограниченное время</h4>
+        <h4 id="podzagolov">Товары резервируются на ограниченное время</h4>
     </div>
     <div id="cart">
         <table>
@@ -212,5 +212,4 @@
 <script src="../lib/bootstrap.min.js"> </script>
 
 <script src="main.js"></script>   
-</body>
-</html>
+<?php require_once '../templates/footer.php' ?>

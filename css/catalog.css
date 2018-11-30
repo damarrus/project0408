@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main_wrapper {
@@ -26,41 +27,84 @@
 }
 
 .title h1 {
-    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.title h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
 }
 
 
 
 .options {
     margin: 0 auto;
-    max-width:300px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black;
     margin-top: 75px;
-    margin-bottom: 65px;
+    
 }
 
-.products {
+#category, #size, #cost {
+    width: 180px;
+    border-bottom: 1px black solid;
+}
 
+.all_products {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
 box-sizing: border-box;
-padding: 48px;
+padding-left: 60px;
+padding-right: 60px;
+margin-top: 35px;
+margin-bottom: 50px;
 }
 
 .product {
     width: 220px;
     height: 256px;
     border: 1px rgb(204, 204, 204) solid;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     
 }
 
 .description {
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .price {
     text-align: center;
-    margin-bottom: 45px; 
+    font-style: italic;
+    margin-bottom: 25px; 
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;  
+}
+
+.buttons button {
+    height: 30px;
+  width: 30px;
+  border: 2px #7a7a7a solid;
+  line-height: 1.7em;
+  background-color: white;
+  outline: none;
+}
+
+.buttons button:hover {
+    border: 3px #7a7a7a solid;
+    background-color: #bebebe;
+    line-height: 2em;
+  }
