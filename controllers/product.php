@@ -7,3 +7,4 @@ $product_id = $_GET['id'];
 $product = new Product($product_id);
 
 // var_dump($product->price);
+require_once '../views/product.php';

@@ -16,34 +16,49 @@
                 </div>
             </div>
             <div class="product_description">
-                <div class="product_description-product_name">
-                    <h1>КЕДЫ С ПОЛОСКОЙ</h1>
-                </div>
-                <div class="product_description-vendor_code">
-                    Артикул: 965897
-                </div>
-                <div class="product_description-price">
-                    <p>4 500 руб.</p>
-                </div>
-                <div class="product_description-description">
-                    <p>Отличные кеды из водонепроницаемого материала. Отлично подходят для любой погоды.
-                    Приятно седят на ноге, стильные и комфортные.</p>
-                </div>
-                <div class="product_description-product_size">
-                    <div class="product_description-product_size-text">
-                        РАЗМЕР
-                    </div>
-                    <div class="product_description-product_size-size_number">
-                        <button>38</button>
-                        <button>39</button>
-                        <button>40</button>
-                        <button>41</button>
-                        <button>42</button>
-                    </div>
-                </div>
-                <div class="product_description-btn">
-                    ДОБАВИТЬ В КОРЗИНУ
-                </div>
+            <?php 
+            // echo "$product->price";
+                echo '<div class="product_description-vendor_code">
+                      Артикул: 965897
+                    </div>';
+                echo '<div class="product_description-product_name">
+                      <h1>'.$product->title.'</h1>
+                     </div>';
+                echo '<div class="product_description-price">
+                     <p>'.$product->price.' руб.</p>
+                     </div>';
+                echo '<div class="product_description-description">
+                     <p>'.$product->description.'</p>
+                    </div>';
+            ?>
+                <!-- // <div class="product_description-product_name">
+                //     <h1>КЕДЫ С ПОЛОСКОЙ</h1>
+                // </div>
+                // <div class="product_description-vendor_code">
+                //     Артикул: 965897
+                // </div>
+                // <div class="product_description-price">
+                //     <p>4 500 руб.</p>
+                // </div>
+                // <div class="product_description-description">
+                //     <p>Отличные кеды из водонепроницаемого материала. Отлично подходят для любой погоды.
+                //     Приятно седят на ноге, стильные и комфортные.</p>
+                // </div>
+                // <div class="product_description-product_size">
+                //     <div class="product_description-product_size-text">
+                //         РАЗМЕР
+                //     </div>
+                //     <div class="product_description-product_size-size_number">
+                //         <button>38</button>
+                //         <button>39</button>
+                //         <button>40</button>
+                //         <button>41</button>
+                //         <button>42</button>
+                //     </div>
+                // </div>
+                // <div class="product_description-btn">
+                //     ДОБАВИТЬ В КОРЗИНУ
+                // </div> -->
             </div>
         </div>            
     </div>
