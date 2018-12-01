@@ -10,6 +10,7 @@ class User
     public $pass;
     public $role;
 
+    
     public function __construct($id)
     {
         global $mysqli;
@@ -39,6 +40,19 @@ class User
         }
 
         return $users;
+    }
+
+    public static function getUserByLoginPass($login, $pass)
+    {
+        $user = new User($id);
+        $query = "SELECT login, pass FROM users WHERE login='$login' AND pass='$pass";
+        $result = $mysqli->query($query);
+        if ($result == $query) {
+        return true;
+        } else {
+            return false;
+        }
+        
     }
 
     public static function create($name, $login, $pass, $role)
