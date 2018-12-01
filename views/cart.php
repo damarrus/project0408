@@ -188,12 +188,24 @@
             <div id="zakaz">
                 <h3 id="seriy">выберите способ оплаты</h3>
                 <select name="pay" id="">
-                    <option value="" style="background-image: url(/images/icons/viza.svg);">  Банковская карта
+                    <option value="" style="background-image: url(/line/project0408/images/icons/viza.svg);">  Банковская карта
                     
                     </option>
                     <option value="">Счет</option>
                     <option value="">Наличные при получении</option>
                 </select>
+
+                <div class="drop-down">
+                    <select name="options">
+                        <option class="en" value="en" 
+                    style="background-image:url('/line/project0408/images/icons/ms.svg');">Банковская карта</option>
+                        <option class="fr" value="fr"
+                    style="background-image:url('/line/project0408/images/icons/bill.svg');">Счет</option>
+                        <option class="nl" value="nl"
+                    style="background-image:url('/line/project0408/images/icons/money.svg');">Наличные при получении</option>
+                    </select>
+                </div> 
+
                 <br>
                 <input type="submit" id="btn" value="Заказать">
             </div>
@@ -210,6 +222,5 @@
 <script src="../lib/jquery-3.3.1.js"></script>
 <script src="../lib/popper.min.js"> </script>        
 <script src="../lib/bootstrap.min.js"> </script>
-
-<script src="main.js"></script>   
+<script src="../js/drop.js"></script>   
 <?php require_once '../templates/footer.php' ?>
