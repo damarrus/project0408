@@ -44,21 +44,37 @@ class User
     public static function create($name, $login, $pass, $role)
     {
         global $mysqli;
+        // потестила, этот пункт работает
+        $query  = "SELECT login FROM users WHERE login='$login'";
+        $result = $mysqli->query($query);
+        if ($result->num_rows==1) {
+            return false;
+        }
+
 
         $query = "INSERT INTO users (name, login, pass, role)
                   VALUES ('$name', '$login', '$pass', '$role')";
 
         $mysqli->query($query);
+        return true;
     }
 
     public function update($name, $login, $pass, $role) 
     {
         global $mysqli;
+        // думаю здесь проверка по имени не очень нужна, так что тоже сделала проверку только по логину
+        $query  = "SELECT login FROM users WHERE login='$login'";
+        $result = $mysqli->query($query);
+        if ($rusult->num_rows==1) {
+            return false;
+        }
+
 
         $query = "UPDATE users SET name='$name', login='$login', pass='$pass', role='$role'
                   WHERE user_id=$this->id";
 
         $mysqli->query($query);
+        return true;
     }
 
     public function delete() 
@@ -70,3 +86,4 @@ class User
         $mysqli->query($query);
     }
 }
+
