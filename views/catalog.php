@@ -24,77 +24,23 @@
                 <option>6000-20000</option>
             </select>
         </div>
-    <div class="all_products">
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
+        <div class="all_products">
+            <?php foreach ($products as $product) {
+                echo '<div class="item">'.$product->title.'</div>';
+            } ?>
+            <div class="item">
+                <div class="product"></div>
+                <p class="description">Куртка синяя</p>
+                <p class="price">5400</p>
+            </div>
         </div>
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>   
-        <div class="item">
-            <div class="product"></div>
-            <p class="description">Куртка синяя</p>
-            <p class="price">5400</p>
-        </div>      
+        <div class="buttons">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+        </div>
     </div>
-    <div class="buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-    </div>
-
-
-</div>
 </div>
 
 <?php require_once '../templates/footer.php' ?>

@@ -1,4 +1,5 @@
 <?php
+
 require_once '../db.php';
 
 class Product 
@@ -71,19 +72,3 @@ class Product
         $mysqli->query($query);
     }
 }
-
-// $products = Product::getAll();
-// var_dump($products);
-// echo '<hr>';
-// $product = new Product(1);
-// var_dump($product);
-// echo '<hr>';
-// // $products = Product::create('Баскетбольный мяч', '', '1250', '1', '0');
-// // var_dump($products);
-// echo '<hr>';
-// $product = new Product(10);
-// echo '<hr>';
-// $product->update('Баскетбольный мяч', '', '1550', '1', '0');
-// echo '<hr>';
-// $product->delete();
-// echo '<hr>';
