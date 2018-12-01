@@ -43,6 +43,12 @@ class Product
             $conditions .= " AND collection_id=$collection_id";
         }
 
+        if($order_id != false) {
+            $conditions .= " AND order_id=$order_id";
+            $conditions .= "  AND op.product_id = p.product_id";
+            $tables .= ', order_products op';
+        }
+
         // SELECT p.product_id
         // FROM products p, order_products op
         // WHERE 1 AND op.order_id = 1 AND op.product_id = p.product_id 
