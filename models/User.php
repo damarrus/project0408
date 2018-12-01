@@ -45,10 +45,9 @@ class User
     public static function getUserByLoginPass($login, $pass)  // создание функции
     {
         global $mysqli;  // подключение к базе
-        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass"; //выбираем из базы 
-        $result = $mysqli->query($query);
-        if ($result->num_rows != 0) {
-            // $user = new User($id);
+        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass'"; //выбираем из базы что чему ровняется
+        $result = $mysqli->query($query); // создаем переменную где содержание в базе ровняется запросу из переменной $query
+        if ($result->num_rows != 0) { // задаем условие при котором "если $result не равен 0, то такой пользователь есть, иначе - такого пользователя нет"
             return true;
         } else {
             return false;
@@ -101,9 +100,3 @@ class User
         $mysqli->query($query);
     }
 }
-
-$user = User::getUserByLoginPass('admin', '123');
-
-var_dump($user);
-// Либо false
-// Либо object(User)
