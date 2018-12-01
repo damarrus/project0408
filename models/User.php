@@ -45,10 +45,10 @@ class User
     public static function getUserByLoginPass($login, $pass)
     {
         $user = new User($id);
-        $query = "SELECT login, pass FROM users WHERE login='$login' AND pass='$pass";
+        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass";
         $result = $mysqli->query($query);
-        if ($result == $query) {
-        return true;
+        if ($result->num_rows != 0) {
+            return true;
         } else {
             return false;
         }
@@ -101,3 +101,8 @@ class User
     }
 }
 
+$user = User::getUserByLoginPass('admin', '123');
+
+var_dump($user);
+// Либо false
+// Либо object(User)
