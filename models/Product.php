@@ -28,11 +28,17 @@ class Product
         $this->collection_id = $product_data['collection_id'];
     }
 
-    public static function getAll($category_id = false)
+    public static function getAll($collection_id = false, $category_id = false)
     {
         global $mysqli;
 
-        $query = "SELECT product_id FROM products";
+        $conditions = '';
+
+        if ($category_id != false) {
+            $conditions .= " AND category_id=$category_id";
+        }
+
+        $query = "SELECT product_id FROM products WHERE 1 $conditions";
         $result = $mysqli->query($query);
 
         $products = [];
