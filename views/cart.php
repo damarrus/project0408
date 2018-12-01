@@ -1,11 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+<?php require_once '../templates/header.php' ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
     
@@ -18,7 +12,7 @@
     <div id="zagolovok">      
     
         <h2 id="vasacart">Ваша корзина</h2>
-        <h4 id="podzagolov">Товары резервируются наограниченное время</h4>
+        <h4 id="podzagolov">Товары резервируются на ограниченное время</h4>
     </div>
     <div id="cart">
         <table>
@@ -228,7 +222,5 @@
 <script src="../lib/jquery-3.3.1.js"></script>
 <script src="../lib/popper.min.js"> </script>        
 <script src="../lib/bootstrap.min.js"> </script>
-
 <script src="../js/drop.js"></script>   
-</body>
-</html>
+<?php require_once '../templates/footer.php' ?>

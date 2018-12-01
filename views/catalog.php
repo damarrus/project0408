@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php require_once '../templates/header.php' ?>
     <title>Каталог</title>
     <link rel="stylesheet" href=../css/catalog.css>
 </head>
@@ -14,13 +10,13 @@
             <h2>Все товары</h2>
         </div>
         <div class="options">
-            <select name="category" >
+            <select name="category" id="category" >
                 <option value="">Категория</option>
             </select>
-            <select name="size" id="">
+            <select name="size" id="size">
                 <option>Размер</option>
             </select>
-            <select name="cost" id="">
+            <select name="cost" id="cost">
                 <option>Стоимость</option>
                 <option>0-1000</option>
                 <option>1000-3000</option>
@@ -28,7 +24,7 @@
                 <option>6000-20000</option>
             </select>
         </div>
-    <div class="products">
+    <div class="all_products">
         <div class="item">
             <div class="product"></div>
             <p class="description">Куртка синяя</p>
@@ -90,25 +86,15 @@
             <p class="price">5400</p>
         </div>      
     </div>
+    <div class="buttons">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+</div>
 </div>
 
-
-
-</body>
-</html>
+<?php require_once '../templates/footer.php' ?>

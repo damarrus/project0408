@@ -8,11 +8,11 @@
 
     <!-- Остальные стили карежат мою верстку. Отключил временно. -->
     
-    <!-- <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/main_style.css">
     <link rel="stylesheet" href="../css/catalog.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/product.css">
-    <link rel="stylesheet" href="../css/footer.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Главная</title>
 </head>
 <body>
