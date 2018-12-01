@@ -38,6 +38,10 @@ class Product
             $conditions .= " AND category_id=$category_id";
         }
 
+        if ($collection_id != false) {
+            $conditions .= " AND collection_id=$collection_id";
+        }
+
         $query = "SELECT product_id FROM products WHERE 1 $conditions";
         $result = $mysqli->query($query);
 
