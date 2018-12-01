@@ -42,12 +42,13 @@ class User
         return $users;
     }
 
-    public static function getUserByLoginPass($login, $pass)
+    public static function getUserByLoginPass($login, $pass)  // создание функции
     {
-        $user = new User($id);
-        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass";
+        global $mysqli;  // подключение к базе
+        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass"; //выбираем из базы 
         $result = $mysqli->query($query);
         if ($result->num_rows != 0) {
+            // $user = new User($id);
             return true;
         } else {
             return false;
