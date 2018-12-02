@@ -48,11 +48,12 @@ class User
         $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass'"; //выбираем из базы что чему ровняется
         $result = $mysqli->query($query); // создаем переменную где содержание в базе ровняется запросу из переменной $query
         if ($result->num_rows != 0) { // задаем условие при котором "если $result не равен 0, то такой пользователь есть, иначе - такого пользователя нет"
-            return true;
+            $user_data = $result->fetch_assoc();
+            $user = new User($user_data['user_id']);
+            return $user;
         } else {
             return false;
-        }
-        
+        }   
     }
 
     public static function create($name, $login, $pass, $role)

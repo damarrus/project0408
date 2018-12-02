@@ -1,3 +1,14 @@
+<?php 
+$login = ($_SESSION["user_id"]);
+if ($login > 0) //($_SESSION["user_id"]); 
+{
+    echo "<style> .login {display: none;} </style>";
+    echo "<style> .logout {display: block;} </style>";
+} else {
+    echo "<style> .login {display: block;} </style>";
+    echo "<style> .logout {display: none;} </style>";
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -32,7 +43,8 @@
             </div>   
             <div class="header-enter">
                 <img src="../images/header/account.png" alt=""> 
-                <a href="#">Войти</a>
+                <a class="login" href="../controllers/admin_aut.php">Войти</a>
+                <a class="logout" href="../controllers/logout.php">Выйти</a>
                 <img src="../images/header/bascet.png" alt=""> 
                 <a href="#">Корзина (0)</a>
 
