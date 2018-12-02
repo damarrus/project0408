@@ -24,11 +24,11 @@
                 <!-- <img src="images/logo.jpg" alt=""> -->
             </div>
             <div class="header-navigation">  
-                <a href="#">Женщинам</a>
-                <a href="#">Мужчинам</a>
-                <a href="#">Детям</a>
-                <a href="#">Новинки</a>
-                <a href="#">О нас</a> 
+                <a href="../controllers/catalog.php?collection_id=2">Женщинам</a>
+                <a href="../controllers/catalog.php?collection_id=1">Мужчинам</a>
+                <a href="../controllers/catalog.php?collection_id=3">Детям</a>
+                <a href="../controllers/catalog.php">Новинки</a>
+                <a href="../controllers/catalog.php">О нас</a> 
             </div>   
             <div class="header-enter">
                 <img src="../images/header/account.png" alt=""> 
