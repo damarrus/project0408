@@ -7,7 +7,7 @@ require_once '../models/Product.php';
 $products = Product::getAll(false, false);
 
 $order_id= $_GET['order_id'];
-
+$userinfo
 $order = new Order($order_id);
 require_once '../views/admin_order.php';
 
