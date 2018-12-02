@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+// var_dump($_SESSION);
 require_once '../models/Product.php';
 
 if (isset($_GET['category_id'])){
