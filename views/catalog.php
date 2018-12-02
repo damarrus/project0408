@@ -25,14 +25,14 @@
             </select>
         </div>
         <div class="all_products">
-            <?php foreach ($products as $product) {
-                echo '<div class="item">'.$product->title.'</div>';
-            } ?>
-            <div class="item">
-                <div class="product"></div>
-                <p class="description">Куртка синяя</p>
-                <p class="price">5400</p>
-            </div>
+            <?php foreach ($products as $product) { ?>
+                <div class="item">
+                    <div class="product"></div>
+                    <p class="description"><?php echo $product->title?> </p>
+                    <p class="price"><?php echo $product->price?></p>
+                </div>
+           <?php } ?>
+            
         </div>
         <div class="buttons">
             <button>1</button>
