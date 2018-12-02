@@ -62,6 +62,22 @@ class Order
         $mysqli->query($query);
     }
 
+    public function updateStatus($status) 
+    {
+        if ($status < 1 || $status > 5) {
+            return false;
+        } 
+
+        global $mysqli;
+
+        $query = "UPDATE orders SET status='$status'
+                  WHERE order_id=$this->id";
+
+        $mysqli->query($query);
+
+        return true;
+    }
+
     public function delete() 
     {
         global $mysqli;
@@ -72,12 +88,3 @@ class Order
     }
 }
 
-// $orders = Order::getAll();
-// var_dump($orders);
-
-// echo '<hr>';
-
-// $order = new Order(1);
-// var_dump($order);
-
-// Order::create('1','Piterburg','1','Доставка');
