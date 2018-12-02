@@ -1,5 +1,4 @@
 
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
     
@@ -22,9 +21,7 @@
       <th scope="col">Доставка</th>
       <th scope="col">Метод оплаты</th>
     </tr>
-  </thead>
-  
-
+  </thead>  
   <tbody>
     <tr>
       <th scope="row">1</th>
@@ -34,6 +31,7 @@
       <td>Ivan</td>
       <td>Иван Петров</td>
       <?php echo '<td>'.$order->comment.'</td>'; ?>
+
       <td>Наличные</td>
     </tr>
   </tbody>

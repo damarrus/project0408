@@ -72,12 +72,12 @@ class Order
     }
 }
 
-$orders = Order::getAll();
-var_dump($orders);
+// $orders = Order::getAll();
+// var_dump($orders);
 
-echo '<hr>';
+// echo '<hr>';
 
-$order = new Order(1);
-var_dump($order);
+// $order = new Order(1);
+// var_dump($order);
 
-Order::create('1','Piterburg','1','Доставка');
+// Order::create('1','Piterburg','1','Доставка');
