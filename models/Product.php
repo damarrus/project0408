@@ -28,17 +28,32 @@ class Product
         $this->collection_id = $product_data['collection_id'];
     }
 
-    public static function getAll($collection_id = false, $category_id = false)
+    public static function getAll($collection_id = false, $category_id = false, $order_id = false)
     {
         global $mysqli;
 
         $conditions = '';
+        $tables = 'products p';
 
         if ($category_id != false) {
             $conditions .= " AND category_id=$category_id";
         }
 
-        $query = "SELECT product_id FROM products WHERE 1 $conditions";
+        if ($collection_id != false) {
+            $conditions .= " AND collection_id=$collection_id";
+        }
+
+        if($order_id != false) {
+            $conditions .= " AND order_id=$order_id";
+            $conditions .= "  AND op.product_id = p.product_id";
+            $tables .= ', order_products op';
+        }
+
+        // SELECT p.product_id
+        // FROM products p, order_products op
+        // WHERE 1 AND op.order_id = 1 AND op.product_id = p.product_id 
+
+        $query = "SELECT p.product_id FROM $tables WHERE 1 $conditions";
         $result = $mysqli->query($query);
 
         $products = [];
