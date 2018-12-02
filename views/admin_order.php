@@ -1,5 +1,4 @@
 
-<?php require_once '../templates/header.php' ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="../lib/bootstrap.min.css">
     
@@ -22,17 +21,17 @@
       <th scope="col">Доставка</th>
       <th scope="col">Метод оплаты</th>
     </tr>
-  </thead>
+  </thead>  
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>1-Создан</td>
-      <td>Москва улю Ленина д 1</td>
+      <?php echo '<td>'.$order->status.'</td>'; ?>
+      <?php echo '<td>'.$order->address.'</td>'; ?>
       <td>+7 120 123 2322</td>
       <td>Ivan</td>
       <td>Иван Петров</td>
-      <td>Время доставки с 10 до 18</td>
-      <td>Курьером</td>
+      <?php echo '<td>'.$order->comment.'</td>'; ?>
+
       <td>Наличные</td>
     </tr>
   </tbody>
@@ -57,6 +56,17 @@
         <th id="seriy">Удалить</th>  
         
     </tr>
+    <?php foreach ($products as $product) { 
+        echo '<tr><td><div class="product_foto"><img src="../images/'.$product->title.'alt=""></div></td>';
+        echo '<td><div id="prod_title"><h4 id="prod">'.$product->title.'</h4><p>арт: 123412</p></div></td>';
+        echo '<td><div id="prod_title"><h4 id="prod">'.$product->size.'</div></td>';
+        echo '<td><div id="prod_title"><h4 id="prod">'.$product->kolvo.'</h4><div>
+        <i class="fas fa-plus-square"></i><br>
+        <i class="fas fa-minus-square"></i></i>
+        </div></div></td>';
+        echo '<td><div id="prod_title"><h4 id="prod">'.$product->price.'</div></td>';
+        echo '<td><div id="prod_title"><h4 id="prod">'.$product->title.'</h4><p>арт: 123412</p></div></td></tr>';
+        } ?>
     
     <tr>
         <td>
@@ -150,4 +160,3 @@
 <script src="../lib/popper.min.js"> </script>        
 <script src="../lib/bootstrap.min.js"> </script>
 <script src="../js/drop.js"></script>   
-<?php require_once '../templates/footer.php' ?>
