@@ -5,6 +5,7 @@ require_once '../db.php';
 class Product 
 {
     public $id;
+    public $image;
     public $title;
     public $description;
     public $price;
@@ -21,6 +22,7 @@ class Product
         $product_data = $result->fetch_assoc();
 
         $this->id = $product_data['product_id'];
+        $this->image = $product_data['image'];
         $this->title = $product_data['title'];
         $this->description = $product_data['description'];
         $this->price = $product_data['price'];
@@ -64,21 +66,21 @@ class Product
         return $products;
     }
 
-    public static function create($title, $description, $price, $category_id, $collection_id)
+    public static function create($image, $title, $description, $price, $category_id, $collection_id)
     {
         global $mysqli;
 
-        $query = "INSERT INTO products (title, description, price, category_id, collection_id)
-                  VALUES ('$title', '$description', '$price', '$category_id', '$collection_id')";
+        $query = "INSERT INTO products (image, title, description, price, category_id, collection_id)
+                  VALUES ('$image', '$title', '$description', '$price', '$category_id', '$collection_id')";
 
         $mysqli->query($query);
     }
 
-    public function update($title, $description, $price, $category_id, $collection_id) 
+    public function update($image, $title, $description, $price, $category_id, $collection_id) 
     {
         global $mysqli;
 
-        $query = "UPDATE products SET title='$title', description='$description', price='$price', category_id='$category_id', collection_id='$collection_id'
+        $query = "UPDATE products SET image='$image', title='$title', description='$description', price='$price', category_id='$category_id', collection_id='$collection_id'
                   WHERE product_id=$this->id";
 
         $mysqli->query($query);

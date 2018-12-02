@@ -27,7 +27,7 @@
         <div class="all_products">
             <?php foreach ($products as $product) { ?>
                 <div class="item">
-                    <div class="product"></div>
+                    <div class="product"><?php echo '<img src="../images/catalog/'.$product->image.'" align="left" width="217" height="253">'?></div>
                     <p class="description"><?php echo $product->title?> </p>
                     <p class="price"><?php echo $product->price?></p>
                 </div>
