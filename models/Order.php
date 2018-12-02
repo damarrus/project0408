@@ -26,11 +26,17 @@ class Order
         $this->comment = $order_data['comment'];
     }
 
-    public static function getAll() 
+    public static function getAll($user_id = false) 
     {
         global $mysqli;
 
-        $query = "SELECT order_id FROM orders";
+        $conditions = '';
+    
+        if ($user_id != false) {
+            $conditions .= " AND user_id=$user_id";
+        }
+
+        $query = "SELECT order_id FROM orders WHERE 1 $conditions";
         $result = $mysqli->query($query);
 
         $orders = [];
