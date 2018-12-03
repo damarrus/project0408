@@ -56,22 +56,20 @@ class User
         }   
     }
 
-    public static function create($name, $login, $pass, $role)
+    public static function create($name, $login, $pass)
     {
         global $mysqli;
         // потестила, этот пункт работает
-        $query  = "SELECT login FROM users WHERE login='$login'";
+        $query  = "SELECT user_id FROM users WHERE login='$login'";
         $result = $mysqli->query($query);
-        if ($result->num_rows==1) {
+        if ($result->num_rows != 0) {
             return false;
-        }
-
-
-        $query = "INSERT INTO users (name, login, pass, role)
-                  VALUES ('$name', '$login', '$pass', '$role')";
-
+        } else {
+        $query = "INSERT INTO users (name, login, pass)
+                  VALUES ('$name', '$login', '$pass')";
         $mysqli->query($query);
         return true;
+        }
     }
 
     public function update($name, $login, $pass, $role) 
