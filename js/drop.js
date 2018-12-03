@@ -1,31 +1,31 @@
-jQuery().ready(function() {  
+$().ready(function() {  
     /* Custom select design */    
-    jQuery('.drop-down').append('<div class="button"></div>');    
-    jQuery('.drop-down').append('<ul class="select-list"></ul>');    
-    jQuery('.drop-down select option').each(function() {  
-    var bg = jQuery(this).css('background-image');    
-    jQuery('.select-list').append('<li class="clsAnchor"><span value="' + jQuery(this).val() + '" class="' + jQuery(this).attr('class') + '" style=background-image:' + bg + '>' + jQuery(this).text() + '</span></li>');   
+    $('.drop-down').append('<div class="button"></div>');    
+    $('.drop-down').append('<ul class="select-list"></ul>');    
+    $('.drop-down select option').each(function() {  
+    var bg = $(this).css('background-image');    
+    $('.select-list').append('<li class="clsAnchor"><span value="' + $(this).val() + '" class="' + $(this).attr('class') + '" style=background-image:' + bg + '>' + $(this).text() + '</span></li>');   
     });    
-    jQuery('.drop-down .button').html('<span style=background-image:' + jQuery('.drop-down select').find(':selected').css('background-image') + '>' + jQuery('.drop-down select').find(':selected').text() + '</span>' + '<a href="javascript:void(0);" class="select-list-link"><i class="fas fa-caret-down"></i></a>');   
-    jQuery('.drop-down ul li').each(function() {   
-    if (jQuery(this).find('span').text() == jQuery('.drop-down select').find(':selected').text()) {  
-    jQuery(this).addClass('active');       
+    $('.drop-down .button').html('<span style=background-image:' + $('.drop-down select').find(':selected').css('background-image') + '>' + $('.drop-down select').find(':selected').text() + '</span>' + '<a href="javascript:void(0);" class="select-list-link"><i class="fas fa-caret-down"></i></a>');   
+    $('.drop-down ul li').each(function() {   
+    if ($(this).find('span').text() == $('.drop-down select').find(':selected').text()) {  
+    $(this).addClass('active');       
     }      
     });     
-    jQuery('.drop-down .select-list span').on('click', function()
+    $('.drop-down .select-list span').on('click', function()
     {          
-    var dd_text = jQuery(this).text();  
-    var dd_img = jQuery(this).css('background-image'); 
-    var dd_val = jQuery(this).attr('value');   
-    jQuery('.drop-down .button').html('<span style=background-image:' + dd_img + '>' + dd_text + '</span>' + '<a href="javascript:void(0);" class="select-list-link"><i class="fas fa-caret-up"></i></a>');      
-    jQuery('.drop-down .select-list span').parent().removeClass('active');    
-    jQuery(this).parent().addClass('active');     
+    var dd_text = $(this).text();  
+    var dd_img = $(this).css('background-image'); 
+    var dd_val = $(this).attr('value');   
+    $('.drop-down .button').html('<span>' + dd_text + '</span>' + '<a href="javascript:void(0);" class="select-list-link"><i class="fas fa-caret-up"></i></a><span style=background-image:' + dd_img + '>___</span>');      
+    $('.drop-down .select-list span').parent().removeClass('active');    
+    $(this).parent().addClass('active');     
     $('.drop-down select[name=options]').val( dd_val ); 
     $('.drop-down .select-list li').slideUp();     
     });       
-    jQuery('.drop-down .button').on('click','a.select-list-link', function()
+    $('.drop-down .button').on('click','a.select-list-link', function()
     {      
-    jQuery('.drop-down ul li').slideToggle();  
+    $('.drop-down ul li').slideToggle();  
     });     
     /* End */       
     });
