@@ -1,12 +1,3 @@
-<?php 
-$reg = ($_GET['error']);
-
-if ($reg == 'user_already_exists') 
-// var_dump($reg);
-{
-    echo "<style> .uae_start {display: block;} </style>";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +6,12 @@ if ($reg == 'user_already_exists')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="../css/signin.css" rel="stylesheet">
+    <?php 
+        if (!isset($_GET['error'])) 
+        {
+            echo "<style>.uae_start {display: none;}</style>";
+        }
+    ?>
     <title>Страница регистрации</title>
 </head>
 <body class="text-center">
