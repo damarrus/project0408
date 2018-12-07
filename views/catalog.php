@@ -10,9 +10,11 @@
             <h2>Все товары</h2>
         </div>
         <div class="options">
-            <select name="category" id="category" >
-                <option value="">Категория</option>
+            <?php foreach ($categories as $category); {?>
+            <select name="category" id="category">
+                <option value=""><?php echo $category->title?></option>
             </select>
+            <?php } ?>
             <select name="size" id="size">
                 <option>Размер</option>
             </select>
@@ -31,8 +33,7 @@
                     <p class="description"><?php echo $product->title?> </p>
                     <p class="price"><?php echo $product->price?></p>
                 </div>
-           <?php } ?>
-            
+           <?php } ?> 
         </div>
         <div class="buttons">
             <button>1</button>

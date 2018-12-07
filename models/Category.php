@@ -20,7 +20,7 @@ class Category
     $category_data = $result->fetch_assoc();
 
     $this->id = $category_data['category_id'];
-    $this->title = ['title'];
+    $this->title = $category_data['title'];
     $this->description = $category_data['description'];
     }
 
@@ -67,13 +67,8 @@ class Category
 
         $mysqli->query($query);
     }
-
-
-
-
 }
 
 
 $categories = Category::getAll();
-var_du
-mp($categories);
+var_dump($categories);
