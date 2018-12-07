@@ -30,7 +30,7 @@ if ($login > 0) //($_SESSION["user_id"]);
     <div class="wrapper">
         <div class="header">
             <div class="header-logo">
-                <a class="logo" href="#"></a> 
+                <a class="logo" href="../controllers/main.php"></a> 
                 <!-- Как вариант -->
                 <!-- <img src="images/logo.jpg" alt=""> -->
             </div>
@@ -39,7 +39,7 @@ if ($login > 0) //($_SESSION["user_id"]);
                 <a href="../controllers/catalog.php?collection_id=1">Мужчинам</a>
                 <a href="../controllers/catalog.php?collection_id=3">Детям</a>
                 <a href="../controllers/catalog.php">Новинки</a>
-                <a href="../controllers/catalog.php">О нас</a> 
+                <a href="../controllers/main.php">О нас</a> 
             </div>   
             <div class="header-enter">
                 <img src="../images/header/account.png" alt=""> 
