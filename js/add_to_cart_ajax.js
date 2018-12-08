@@ -5,7 +5,7 @@ $(document).ready(function() {
         $.ajax({
             url: "add_to_cart.php",
             type: 'POST',
-            data: {product_id: id},
+            data: {product_id: id, },
             success: function(response) {
                 if (response) {
                     alert('Товар добавлен в корзину');

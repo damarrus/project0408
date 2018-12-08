@@ -30,6 +30,15 @@
                 echo '<div class="product_description-description">
                      <p>'.$product->description.'</p>
                     </div>';
+                echo '<div class="product_description-product_size-size_number">';
+                    
+                foreach ($sizes as $size){
+                    echo  "<button>".$size->value."</button>";
+                  
+                }
+
+                echo '</div>';
+
             ?>
                 <!-- // <div class="product_description-product_name">
                 //     <h1>КЕДЫ С ПОЛОСКОЙ</h1>
@@ -48,14 +57,8 @@
                 //     <div class="product_description-product_size-text">
                 //         РАЗМЕР
                 //     </div>
-                //     <div class="product_description-product_size-size_number">
-                //         <button>38</button>
-                //         <button>39</button>
-                //         <button>40</button>
-                //         <button>41</button>
-                //         <button>42</button>
-                //     </div>
-                // </div>-->
+                //     
+                // </div> -->
                 
                  <div class="product_description-btn" data-product-id="<?php echo $product->id ?>">
                      ДОБАВИТЬ В КОРЗИНУ
