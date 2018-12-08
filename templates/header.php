@@ -24,7 +24,7 @@ if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] > 0)
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Главная</title>
+    <title><?php echo $page_title?> </title>
 </head>
 <body>
     <div class="wrapper">
