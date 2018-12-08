@@ -4,6 +4,8 @@ session_start();
 require_once '../models/Product.php';
 require_once '../models/Category.php';
 
+require_once '../models/Collection.php';
+
 if (isset($_GET['category_id'])){
     $category_id = $_GET['category_id']; 
 } else {
@@ -12,12 +14,22 @@ if (isset($_GET['category_id'])){
 
 if (isset($_GET['collection_id'])){
     $collection_id = $_GET['collection_id']; 
+    $collection  = new Collection($collection_id);
+    $collection_title = $collection->title;
 } else {
     $collection_id = false;
+    $collection_title = 'Каталог';
 }
 
 
 
 $products = Product::getAll($collection_id, $category_id);
+<<<<<<< Updated upstream
 $categories = Category::getAll();
+=======
+
+
+
+
+>>>>>>> Stashed changes
 require_once '../views/catalog.php';
