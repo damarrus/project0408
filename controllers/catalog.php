@@ -24,12 +24,5 @@ if (isset($_GET['collection_id'])){
 
 
 $products = Product::getAll($collection_id, $category_id);
-<<<<<<< Updated upstream
 $categories = Category::getAll();
-=======
-
-
-
-
->>>>>>> Stashed changes
 require_once '../views/catalog.php';

@@ -1,11 +1,4 @@
 <?php require_once '../templates/header.php' ?>
-<<<<<<< Updated upstream
-<?php 
-    $title_collection = 'Мужчинам';
- ?>;   
-=======
-
->>>>>>> Stashed changes
     <title>Каталог</title>
     <link rel="stylesheet" href=../css/catalog.css>
 </head>
@@ -13,11 +6,7 @@
 <div class="main_wrapper">
     <div class="wrapper">
         <div class="title">
-<<<<<<< Updated upstream
-            <h1><?php echo $title_collection?></h1>
-=======
             <h1><?php echo $collection_title?></h1>
->>>>>>> Stashed changes
             <h2>Все товары</h2>
         </div>
         <div class="options">
