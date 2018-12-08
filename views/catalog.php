@@ -7,7 +7,7 @@
     <div class="wrapper">
         <div class="title">
             <h1><?php echo $collection_title?></h1>
-            <h2>Все товары</h2>
+            <h2><?php echo $category_title?></h2>
         </div>
         <div class="options">
             <?php foreach ($categories as $category); {?>
