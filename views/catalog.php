@@ -28,11 +28,12 @@
         </div>
         <div class="all_products">
             <?php foreach ($products as $product) { ?>
+                <a href="product.php?id=<?php echo $product->id?>">
                 <div class="item">
                     <div class="product"><?php echo '<img src="../images/catalog/'.$product->image.'" align="left" width="217" height="253">'?></div>
                     <p class="description"><?php echo $product->title?> </p>
                     <p class="price"><?php echo $product->price?></p>
-                </div>
+                </div> </a>
            <?php } ?> 
         </div>
         <div class="buttons">
