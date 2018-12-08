@@ -149,6 +149,7 @@
   color: white;
   margin: 0 auto;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .product_description .product_description-btn:hover {

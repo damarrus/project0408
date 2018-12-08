@@ -55,11 +55,14 @@
                 //         <button>41</button>
                 //         <button>42</button>
                 //     </div>
-                // </div>
-                // <div class="product_description-btn">
-                //     ДОБАВИТЬ В КОРЗИНУ
-                // </div> -->
+                // </div>-->
+                
+                 <div class="product_description-btn" data-product-id="<?php echo $product->id ?>">
+                     ДОБАВИТЬ В КОРЗИНУ
+                 </div>
             </div>
         </div>            
     </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/add_to_cart_ajax.js"></script>
     <?php require_once '../templates/footer.php' ?>
