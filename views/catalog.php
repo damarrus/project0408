@@ -13,11 +13,11 @@
             <h2>Все товары</h2>
         </div>
         <div class="options">
-            <?php foreach ($categories as $category); {?>
-            <select name="category" id="category">
-                <option value=""><?php echo $category->title?></option>
+        <select name="category" id="category">
+            <?php foreach ($categories as $category) {
+            echo '<option value="">'.$category->title.'</option>';
+            } ?>
             </select>
-            <?php } ?>
             <select name="size" id="size">
                 <option>Размер</option>
             </select>
