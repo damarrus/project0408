@@ -1,6 +1,6 @@
 <?php 
-$login = ($_SESSION["user_id"]);
-if ($login > 0)
+$login = (isset($_SESSION["user_id"]));
+if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] > 0)
 {
     echo "<style> .login {display: none;} </style>";
     echo "<style> .logout {display: block;} </style>";

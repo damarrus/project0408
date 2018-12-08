@@ -42,11 +42,10 @@ class User
         return $users;
     }
 
-    public static function getUserByLoginPass($login, $pass)  // создание функции
+    public static function getUserByLogin($login)  // создание функции
     {
         global $mysqli;  // подключение к базе
-        $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass'"; //выбираем из базы что чему ровняется
-        $query_pass = $user_data['pass'];
+        $query = "SELECT user_id FROM users WHERE login='$login'"; //выбираем из базы что чему ровняется
         $result = $mysqli->query($query); // создаем переменную которая ровняется id юзера из базы и принимает числовое значение 1,2... или =0 если логин или пароль не совпадают
         if ($result->num_rows != 0) { // задаем условие при котором "если $result не равен 0, то такой пользователь есть, иначе - такого пользователя нет"
             $user_data = $result->fetch_assoc();
@@ -54,7 +53,7 @@ class User
             return $user;
         } else {
             return false;
-        }   
+        }
     }
 
     public static function create($name, $login, $pass)

@@ -70,5 +70,5 @@ class Category
 }
 
 
-$categories = Category::getAll();
-var_dump($categories);
+// $categories = Category::getAll();
+// var_dump($categories);
