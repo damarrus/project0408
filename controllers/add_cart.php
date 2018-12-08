@@ -12,15 +12,9 @@ require_once '../models/Product.php';
 if(!isset($_SESSION['cart'])){
     $_SESSION['cart'] = array();
 }
-$products = isset($_GET['product_id']) ? $_GET['product_id'] : null;
+$products = isset($_POST['product_id']) ? $_POST['product_id'] : null;
 if(!empty($products)){
     $_SESSION['cart'][] = $products;
-    Header("Location: cart.php?product_id={$products}");
 }
-// print_r($_SESSION['cart']);
 
-// $cart = $_SESSION['product_id'];
-
-
-require_once 'cart.php';
-// echo success;
+echo true;

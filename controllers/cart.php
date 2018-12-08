@@ -1,22 +1,16 @@
 <?php
-// session_start();
-require_once 'add_cart.php';
+session_start();
+// require_once '../models/Product.php';
 
 
-// забирать из сессии товары
-
-
-$products = $_SESSION['cart'];
-
-foreach ($products as $product) {
-
+$product_ids = $_SESSION['cart'];
+$products = [];
+foreach ($product_ids as $product_id) {
+    $products[] = new Product($products[$product_id]);
 }
 
-
+// var_dump($_SESSION);
 // переход на вьюшку корзины??
-// Header("Location: ../views/cart.php?product_id={$prodId}");
-// }
-
 
 require_once '../views/cart.php';
 
