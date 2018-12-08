@@ -8,7 +8,7 @@ $(document).ready(function() {
             data: {product_id: id},
             success: function(response) {
                 if (response) {
-                    $(this).attr('data-product-id');
+                    alert('Товар добавлен в корзину');
                 } else {
                     alert('Товар уже в корзине');
  
