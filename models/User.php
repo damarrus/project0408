@@ -46,7 +46,8 @@ class User
     {
         global $mysqli;  // подключение к базе
         $query = "SELECT user_id FROM users WHERE login='$login' AND pass='$pass'"; //выбираем из базы что чему ровняется
-        $result = $mysqli->query($query); // создаем переменную где содержание в базе ровняется запросу из переменной $query
+        $query_pass = $user_data['pass'];
+        $result = $mysqli->query($query); // создаем переменную которая ровняется id юзера из базы и принимает числовое значение 1,2... или =0 если логин или пароль не совпадают
         if ($result->num_rows != 0) { // задаем условие при котором "если $result не равен 0, то такой пользователь есть, иначе - такого пользователя нет"
             $user_data = $result->fetch_assoc();
             $user = new User($user_data['user_id']);
@@ -56,22 +57,20 @@ class User
         }   
     }
 
-    public static function create($name, $login, $pass, $role)
+    public static function create($name, $login, $pass)
     {
         global $mysqli;
         // потестила, этот пункт работает
-        $query  = "SELECT login FROM users WHERE login='$login'";
+        $query  = "SELECT user_id FROM users WHERE login='$login'";
         $result = $mysqli->query($query);
-        if ($result->num_rows==1) {
+        if ($result->num_rows != 0) {
             return false;
-        }
-
-
-        $query = "INSERT INTO users (name, login, pass, role)
-                  VALUES ('$name', '$login', '$pass', '$role')";
-
+        } else {
+        $query = "INSERT INTO users (name, login, pass)
+                  VALUES ('$name', '$login', '$pass')";
         $mysqli->query($query);
         return true;
+        }
     }
 
     public function update($name, $login, $pass, $role) 
