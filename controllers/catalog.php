@@ -18,6 +18,8 @@ if (isset($_GET['collection_id'])){
 
 
 
+
+
 $products = Product::getAll($collection_id, $category_id);
 $categories = Category::getAll();
 require_once '../views/catalog.php';

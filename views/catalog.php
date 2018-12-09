@@ -14,8 +14,9 @@
         </div>
         <div class="options">
         <select name="category" id="category">
+            <option value="">Выберите категорию</option>
             <?php foreach ($categories as $category) {
-            echo '<option value="">'.$category->title.'</option>';
+            echo '<option value="'.$category->id.'" data-category-id="'.$category->id.'" id="'.$category->id.'">'.$category->title.'</option>';
             } ?>
             </select>
             <select name="size" id="size">
@@ -46,5 +47,7 @@
         </div>
     </div>
 </div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/category_selection.js"></script>
 
 <?php require_once '../templates/footer.php' ?>
