@@ -32,11 +32,7 @@
       <td>Ivan</td>
       <td>Иван Петров</td>
       <?php echo '<td>'.$order->comment.'</td>'; ?>
-<<<<<<< HEAD
       <td>Курьером</td>
-=======
-
->>>>>>> 4f7095a40198bda9f6735cdab30f4ff67ff69790
       <td>Наличные</td>
     </tr>
   </tbody>
