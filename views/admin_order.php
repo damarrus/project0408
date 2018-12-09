@@ -24,14 +24,19 @@
   </thead>  
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <?php echo '<th scope="row">'.$order_id.'</td>'; ?>
+     
       <?php echo '<td>'.$order->status.'</td>'; ?>
       <?php echo '<td>'.$order->address.'</td>'; ?>
       <td>+7 120 123 2322</td>
       <td>Ivan</td>
       <td>Иван Петров</td>
       <?php echo '<td>'.$order->comment.'</td>'; ?>
+<<<<<<< HEAD
+      <td>Курьером</td>
+=======
 
+>>>>>>> 4f7095a40198bda9f6735cdab30f4ff67ff69790
       <td>Наличные</td>
     </tr>
   </tbody>
@@ -59,16 +64,16 @@
     <?php foreach ($products as $product) { 
         echo '<tr><td><div class="product_foto"><img src="../images/'.$product->title.'alt=""></div></td>';
         echo '<td><div id="prod_title"><h4 id="prod">'.$product->title.'</h4><p>арт: 123412</p></div></td>';
-        echo '<td><div id="prod_title"><h4 id="prod">'.$product->size.'</div></td>';
-        echo '<td><div id="prod_title"><h4 id="prod">'.$product->kolvo.'</h4><div>
+        echo '<td><div id="prod_size"><h4 id="prod">'.$product->size.'</div></td>';
+        echo '<td><div id="prod_kolvo"><h4 id="prod">'.$product->kolvo.'</h4><div>
         <i class="fas fa-plus-square"></i><br>
         <i class="fas fa-minus-square"></i></i>
         </div></div></td>';
-        echo '<td><div id="prod_title"><h4 id="prod">'.$product->price.'</div></td>';
-        echo '<td><div id="prod_title"><h4 id="prod">'.$product->title.'</h4><p>арт: 123412</p></div></td></tr>';
+        echo ' <td>3900 руб</td> id="prod">'.$product->price.'</div></td>';
+        echo '<td><i class="fas fa-times"></i></td> id="prod">'.$product->title.'</h4><p>арт: 123412</p></div></td></tr>';
         } ?>
     
-    <tr>
+    <!-- <tr>
         <td>
             <div class="product_foto">
                 <img src="../images/product/9.jpg" alt="">
@@ -146,7 +151,7 @@
         <td>3900 руб</td>
         <td><i class="fas fa-times"></i></td>
         
-    </tr>
+    </tr> -->
     </table>
     
 </div>
