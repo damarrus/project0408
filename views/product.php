@@ -33,7 +33,7 @@
                 echo '<div class="product_description-product_size-size_number">';
                     
                 foreach ($sizes as $size){
-                    echo  "<button>".$size->value."</button>";
+                    echo  '<button data-size-id="'.$size->id.'">'.$size->value.'</button>';
                   
                 }
 
