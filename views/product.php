@@ -11,10 +11,8 @@
         <div class="wrapper-work">
             <div class="wrapper-work-product">
                 <div class="wrapper-work-product-wrapper">
-                    <div class="wrapper-work-product-wrapper-product">
-                    <?php
-                     echo '<img src="../images/catalog/'.$product->image.'" text-align="center" width="700" height="450"   >';
-                    ?>
+                    <div class="wrapper-work-product-wrapper-product" style="background-image: url(../images/catalog/9.jpg);">
+
                     </div> 
                 </div>
             </div>
