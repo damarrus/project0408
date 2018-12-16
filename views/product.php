@@ -11,10 +11,8 @@
         <div class="wrapper-work">
             <div class="wrapper-work-product">
                 <div class="wrapper-work-product-wrapper">
-                    <div class="wrapper-work-product-wrapper-product">
-                    <?php
-                     echo '<img src="../images/catalog/'.$product->image.'" text-align="center" width="700" height="450"   >';
-                    ?>
+                    <div class="wrapper-work-product-wrapper-product" style="background-image: url(../images/catalog/9.jpg);">
+
                     </div> 
                 </div>
             </div>
@@ -33,6 +31,15 @@
                 echo '<div class="product_description-description">
                      <p>'.$product->description.'</p>
                     </div>';
+                echo '<div class="product_description-product_size-size_number">';
+                    
+                foreach ($sizes as $size){
+                    echo  '<button data-size-id="'.$size->id.'">'.$size->value.'</button>';
+                  
+                }
+
+                echo '</div>';
+
             ?>
                 <!-- // <div class="product_description-product_name">
                 //     <h1>КЕДЫ С ПОЛОСКОЙ</h1>
@@ -51,14 +58,8 @@
                 //     <div class="product_description-product_size-text">
                 //         РАЗМЕР
                 //     </div>
-                //     <div class="product_description-product_size-size_number">
-                //         <button>38</button>
-                //         <button>39</button>
-                //         <button>40</button>
-                //         <button>41</button>
-                //         <button>42</button>
-                //     </div>
-                // </div>-->
+                //     
+                // </div> -->
                 
                  <div class="product_description-btn" data-product-id="<?php echo $product->id ?>">
                      ДОБАВИТЬ В КОРЗИНУ

@@ -48,7 +48,7 @@ h3 {
 }
 .info_block_woman {
     background: url(../images/main/1.jpg) 0 / cover no-repeat;
-    height: 450px;
+    height: 438px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -63,7 +63,7 @@ h3 {
 }
 .info_block_belt {
     background: url(../images/main/5.jpg) 77% / cover no-repeat;
-    height: 225px;
+    height: 219px;
 }
 .info_block_lightgray {
     background: lightgray;
@@ -177,8 +177,8 @@ h3 {
     z-index: 3;
 }
 .info_block_children {
-    background: url(../images/main/31735710342_86e5b0c63f_b.jpg) -19% / cover no-repeat;
-    height: 467px;
+    background: url(../images/main/31735710342_86e5b0c63f_b.jpg) 0 / cover no-repeat;
+    height: 439px;
     align-items: center;
     justify-content: center;
     display: flex;
