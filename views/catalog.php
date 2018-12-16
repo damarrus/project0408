@@ -11,8 +11,9 @@
         </div>
         <div class="options">
         <select name="category" id="category">
+            <?php echo '<option value="">Все категории</option>';?>
             <?php foreach ($categories as $category) {
-            echo '<option value="">'.$category->title.'</option>';
+            echo '<option value="'.$category->id.'" data-category-id="'.$category->id.'">'.$category->title.'</option>';
             } ?>
             </select>
             <select name="size" id="size">
