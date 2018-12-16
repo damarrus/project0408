@@ -71,6 +71,11 @@
     padding:25px;
 }
 
+.all_products a{
+    text-decoration: none;
+    color: gray;
+}
+
 .product {
     width: 220px;
     height: 256px;
