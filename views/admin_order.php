@@ -24,6 +24,7 @@
   </thead>  
   <tbody>
     <tr>
+
       <?php echo '<th scope="row">'.$order_id.'</td>'; ?>
      
       <?php echo '<td>'.$order->status.'</td>'; ?>
@@ -37,7 +38,17 @@
     </tr>
   </tbody>
 </table>
-
+<p>Изменить статус</p>
+<select name="status" form="update_status">
+            <option value="1"><?php echo '<td>'.$order->status.'</td>'; ?></option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+<form action="update_status.php" id="update_status">
+<input type="submit" class="btn btn-primary" form="update_status" value="Сохранить">
+</form>
 <div id="zagolovok">      
     
     <h2 id="vasacart">Заказ #Username</h2>

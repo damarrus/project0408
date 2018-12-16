@@ -4,6 +4,7 @@ require_once '../models/User.php';
 require_once '../models/Order.php';
 require_once '../models/Product.php';
 $order_id= $_GET['order_id'];
+
 $products = Product::getAll(false, false , $order_id );
 
 $order = new Order($order_id);
