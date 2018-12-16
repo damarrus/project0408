@@ -33,6 +33,11 @@
             </div>
         </div>
     </div>
-</div>   
+</div>
+<script src="../lib/jquery-3.3.1.js"></script>
+<script src="../lib/popper.min.js"> </script>        
+<script src="../lib/bootstrap.min.js"> </script>
+<script src="../js/drop.js"></script> 
+<script src="../js/change_category.js"></script>    
 </body>
 </html>
