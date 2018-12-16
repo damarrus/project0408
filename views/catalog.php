@@ -1,7 +1,4 @@
 <?php require_once '../templates/header.php' ?>
-<?php 
-    $title_collection = 'Мужчинам';
- ?>;   
     <title>Каталог</title>
     <link rel="stylesheet" href=../css/catalog.css>
 </head>
@@ -9,15 +6,15 @@
 <div class="main_wrapper">
     <div class="wrapper">
         <div class="title">
-            <h1><?php echo $title_collection?></h1>
-            <h2>Все товары</h2>
+            <h1><?php echo $collection_title?></h1>
+            <h2><?php echo $category_title?></h2>
         </div>
         <div class="options">
-            <?php foreach ($categories as $category); {?>
-            <select name="category" id="category">
-                <option value=""><?php echo $category->title?></option>
+        <select name="category" id="category">
+            <?php foreach ($categories as $category) {
+            echo '<option value="">'.$category->title.'</option>';
+            } ?>
             </select>
-            <?php } ?>
             <select name="size" id="size">
                 <option>Размер</option>
             </select>
@@ -31,11 +28,12 @@
         </div>
         <div class="all_products">
             <?php foreach ($products as $product) { ?>
+                <a href="product.php?id=<?php echo $product->id?>">
                 <div class="item">
                     <div class="product"><?php echo '<img src="../images/catalog/'.$product->image.'" align="left" width="217" height="253">'?></div>
                     <p class="description"><?php echo $product->title?> </p>
                     <p class="price"><?php echo $product->price?></p>
-                </div>
+                </div> </a>
            <?php } ?> 
         </div>
         <div class="buttons">

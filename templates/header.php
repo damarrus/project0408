@@ -1,6 +1,6 @@
 <?php 
-$login = ($_SESSION["user_id"]);
-if ($login > 0)
+$login = (isset($_SESSION["user_id"]));
+if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] > 0)
 {
     echo "<style> .login {display: none;} </style>";
     echo "<style> .logout {display: block;} </style>";
@@ -24,7 +24,7 @@ if ($login > 0)
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Главная</title>
+    <title><?php echo $page_title?> </title>
 </head>
 <body>
     <div class="wrapper">

@@ -76,8 +76,8 @@ class Collection
 
 
 
-$collection = new Collection(1);
-$collection->update('для мужчин','описание');
+// $collection = new Collection(1);
+// $collection->update('Мужчинам','Товары для мужчин');
 // $collection->delete('$this->id');
 
 

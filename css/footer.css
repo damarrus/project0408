@@ -35,9 +35,11 @@
     margin-bottom: 20px;  
 }
 
-.footer-block  p{
+.footer-block  p,a{
     color: gray;
+    text-decoration: none;
     font-size: 13px;
     margin-bottom: 10px;  
 }
+
 

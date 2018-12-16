@@ -69,5 +69,5 @@ class Category
     }
 }
 
-
-$categories = Category::getAll();
+// $categories = Category::getAll();
+// var_dump($categories);
